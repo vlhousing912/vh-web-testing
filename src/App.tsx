@@ -2,7 +2,6 @@ import { lazy, Suspense, useState, useEffect } from 'react';
 import { Routes, Route, useLocation, Link } from 'react-router-dom';
 import { Phone, MessageCircle } from 'lucide-react';
 import Header from '@/components/layout/Header';
-import TopBar from '@/components/layout/TopBar';
 import Footer from '@/components/layout/Footer';
 import LoadingScreen from '@/components/layout/LoadingScreen';
 import ScrollProgress from '@/components/ui/ScrollProgress';
@@ -56,7 +55,6 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <ScrollProgress />
-      <TopBar />
       <Header />
       <main className="flex-1">
         <Suspense fallback={<PageLoader />}>
