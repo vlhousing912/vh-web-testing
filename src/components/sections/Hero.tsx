@@ -137,7 +137,7 @@ export default function Hero() {
 
       {/* ── Main content ── */}
       <div
-        className="relative z-10 flex-1 flex items-center justify-center section-max section-padding text-center pt-2 pb-8 -mt-4"
+        className="relative z-10 flex-1 flex items-center justify-center section-max section-padding text-center pb-8 -mt-20"
         style={{ opacity }}
       >
         <div>
