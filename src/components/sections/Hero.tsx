@@ -172,14 +172,14 @@ export default function Hero() {
           </h1>
 
           {/* Decorative horizontal line */}
-          <div className="flex items-center justify-center gap-3 mt-8 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+          <div className="flex items-center justify-center gap-3 mt-36 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <div className="w-8 h-px bg-gold-500/40" />
             <div className="w-1.5 h-1.5 rotate-45 border border-gold-500/50" />
             <div className="w-8 h-px bg-gold-500/40" />
           </div>
 
           {/* Subtext */}
-          <p className="mt-6 text-lg sm:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{ animationDelay: '0.55s' }}>
+          <p className="mt-28 text-lg sm:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{ animationDelay: '0.55s' }}>
             Thoughtfully planned residential plotted developments designed around location, connectivity, transparency and long-term value.
           </p>
 
