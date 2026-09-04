@@ -142,7 +142,7 @@ export default function Hero() {
       >
         <div>
           {/* Animated badge */}
-          <div className="mb-8 animate-fade-in" style={{ animationDelay: '0.05s' }}>
+          <div className="mb-8 mt-14 animate-fade-in" style={{ animationDelay: '0.05s' }}>
             <span className="inline-flex items-center gap-2.5 px-6 py-2.5 border border-gold-500/30 rounded-full text-gold-400 text-[11px] font-semibold tracking-[0.3em] uppercase bg-gold-500/[0.06] backdrop-blur-sm">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75 animate-ping" />
@@ -172,7 +172,7 @@ export default function Hero() {
           </h1>
 
           {/* Decorative horizontal line */}
-          <div className="flex items-center justify-center gap-3 mt-36 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+          <div className="flex items-center justify-center gap-3 mt-20 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <div className="w-8 h-px bg-gold-500/40" />
             <div className="w-1.5 h-1.5 rotate-45 border border-gold-500/50" />
             <div className="w-8 h-px bg-gold-500/40" />
