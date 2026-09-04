@@ -168,11 +168,7 @@ export default function Hero() {
                 </span>
               </span>
             </span>
-            <span className="block mt-2 overflow-hidden">
-              <span className="block animate-fade-up" style={{ animationDelay: '0.45s' }}>
-                SHAPING TOMORROW.
-              </span>
-            </span>
+
           </h1>
 
           {/* Decorative horizontal line */}
