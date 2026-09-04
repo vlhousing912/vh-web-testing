@@ -104,7 +104,7 @@ export default function Hero() {
         style={{ transform: `translateY(${parallaxOffset}px)` }}
       >
         <img
-          src="https://i.ibb.co/CpyQDH8G/Chat-GPT-Image-Sep-4-2026-11-40-39-AM.png"
+          src="https://i.ibb.co/qYC2FLWY/home-page-hero-section-background.png"
           alt=""
           className="w-full h-[120%] object-cover"
           aria-hidden="true"
