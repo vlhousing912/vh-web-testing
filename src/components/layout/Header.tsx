@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, MapPin, ChevronRight } from 'lucide-react';
+import { Menu, X, Phone, ChevronRight } from 'lucide-react';
 import { mainNavigation } from '@/data/navigation';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
-import { scrollToTop, getPhoneUrl, LOGO_URL, CONTACT_PLACEHOLDER, COMPANY_NAME } from '@/lib/utils';
+import { scrollToTop, getPhoneUrl, LOGO_URL } from '@/lib/utils';
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -33,8 +33,7 @@ export default function Header() {
 
   const textColor = isHome && !isScrolled ? 'text-white' : 'text-neutral-900';
   const navTextColor = isHome && !isScrolled ? 'text-white/80 hover:text-white' : 'text-neutral-600 hover:text-navy-500';
-  const topBarText = isHome && !isScrolled ? 'text-white/60 hover:text-gold-400' : 'text-neutral-500 hover:text-navy-500';
-  const topBarBorder = isHome && !isScrolled ? 'border-white/10' : 'border-neutral-200';
+
 
   return (
     <header
@@ -43,33 +42,6 @@ export default function Header() {
     >
       {/* Premium gold accent line */}
       <div className="h-[2px] bg-gradient-to-r from-transparent via-gold-500/60 to-transparent" />
-
-      {/* Top info bar — desktop only */}
-      <div className={`hidden lg:block border-b ${topBarBorder}`}>
-        <div className="section-max section-padding">
-          <div className="flex items-center justify-between h-9">
-            <div className="flex items-center gap-6">
-              <span className={`font-semibold tracking-wide text-[11px] ${isHome && !isScrolled ? 'text-white/90' : 'text-neutral-700'}`}>
-                {COMPANY_NAME}
-              </span>
-              <span className={`w-px h-3 ${isHome && !isScrolled ? 'bg-white/10' : 'bg-neutral-200'}`} />
-              <a href={getPhoneUrl()} className={`flex items-center gap-1.5 transition-colors ${topBarText}`}>
-                <Phone className="w-3 h-3" />
-                {CONTACT_PLACEHOLDER.phone}
-              </a>
-              <span className={`w-px h-3 ${isHome && !isScrolled ? 'bg-white/10' : 'bg-neutral-200'}`} />
-              <a href={`mailto:${CONTACT_PLACEHOLDER.email}`} className={`flex items-center gap-1.5 transition-colors ${topBarText}`}>
-                <Mail className="w-3 h-3" />
-                {CONTACT_PLACEHOLDER.email}
-              </a>
-            </div>
-            <div className={`flex items-center gap-1.5 ${isHome && !isScrolled ? 'text-white/40' : 'text-neutral-400'}`}>
-              <MapPin className="w-3 h-3" />
-              Vijayawada, Andhra Pradesh
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Main navigation */}
       <div className="section-max section-padding">
