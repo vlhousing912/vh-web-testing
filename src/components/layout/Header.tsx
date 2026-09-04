@@ -28,7 +28,7 @@ export default function Header() {
   const headerBg = isHome
     ? isScrolled
       ? 'bg-white/95 backdrop-blur-lg shadow-card border-b border-neutral-100'
-      : 'bg-transparent'
+      : 'bg-gradient-to-b from-black/70 via-black/40 to-transparent'
     : 'bg-white/95 backdrop-blur-lg shadow-card border-b border-neutral-100';
 
   const textColor = isHome && !isScrolled ? 'text-white' : 'text-neutral-900';
