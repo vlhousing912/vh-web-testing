@@ -100,16 +100,15 @@ export default function Hero() {
     <section className="relative min-h-screen flex flex-col overflow-hidden" role="banner">
       {/* ── Background with parallax ── */}
       <div
-        className="absolute inset-0 will-change-transform"
-        style={{ transform: `translateY(${parallaxOffset}px)` }}
-      >
-        <img
-          src="https://i.ibb.co/Jwcvscjd/HOME-PAGE-BACKGROUND-2.png"
-          alt=""
-          className="w-full h-[120%] object-cover"
-          aria-hidden="true"
-        />
-      </div>
+        className="absolute inset-[-10%] will-change-transform"
+        style={{
+          backgroundImage: 'url(https://i.ibb.co/Jwcvscjd/HOME-PAGE-BACKGROUND-2.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 40%',
+          transform: `translateY(${-parallaxOffset * 0.5}px)`,
+        }}
+        aria-hidden="true"
+      />
 
 
 
@@ -153,7 +152,7 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Headline — staggered character-level reveal */}
+          {/* Headline — staggered reveal */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] font-bold text-white leading-[1.05] tracking-tight">
             <span className="block overflow-hidden">
               <span className="block animate-fade-up" style={{ animationDelay: '0.15s' }}>
@@ -184,7 +183,7 @@ export default function Hero() {
           </div>
 
           {/* Subtext */}
-          <p className="mt-6 text-lg sm:text-xl text-white/55 max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{ animationDelay: '0.55s' }}>
+          <p className="mt-6 text-lg sm:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{ animationDelay: '0.55s' }}>
             Thoughtfully planned residential plotted developments designed around location, connectivity, transparency and long-term value.
           </p>
 
