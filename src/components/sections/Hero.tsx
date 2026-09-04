@@ -104,7 +104,7 @@ export default function Hero() {
         style={{ transform: `translateY(${parallaxOffset}px)` }}
       >
         <img
-          src="https://i.ibb.co/qYC2FLWY/home-page-hero-section-background.png"
+          src="https://i.ibb.co/Jwcvscjd/HOME-PAGE-BACKGROUND-2.png"
           alt=""
           className="w-full h-[120%] object-cover"
           aria-hidden="true"
