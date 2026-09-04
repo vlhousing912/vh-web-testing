@@ -29,8 +29,8 @@ function FloatingShapes() {
   );
 }
 
-/* ── Animated counter stats strip ── */
-const stats = [
+/* ── Animated counter stats (exported separately) ── */
+export const stats = [
   { value: 500, suffix: '+', label: 'Plots Delivered' },
   { value: 15, suffix: '+', label: 'Years of Trust' },
   { value: 50, suffix: '+', label: 'Happy Families' },
@@ -203,28 +203,10 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ── Stats bar at bottom ── */}
-      <div className="relative z-10 border-t border-white/10 bg-navy-950/50 backdrop-blur-md">
-        <div className="section-max section-padding py-8 lg:py-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center group">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white font-display transition-transform duration-300 group-hover:scale-105">
-                  <AnimatedCounter target={stat.value} suffix={stat.suffix} />
-                </div>
-                <p className="mt-2 text-[11px] sm:text-xs text-white/40 font-medium tracking-[0.15em] uppercase">
-                  {stat.label}
-                </p>
-                {/* Subtle gold underline */}
-                <div className="w-6 h-px bg-gold-500/30 mx-auto mt-3 group-hover:w-10 transition-all duration-300" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-44 lg:bottom-24 left-1/2 -translate-x-1/2 z-10 animate-fade-in" style={{ animationDelay: '1.2s' }}>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-fade-in" style={{ animationDelay: '1.2s' }}>
         <a
           href="#trust-strip"
           className="flex flex-col items-center text-white/30 hover:text-white/60 transition-colors group"

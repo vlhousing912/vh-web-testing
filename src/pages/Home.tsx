@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Hero from '@/components/sections/Hero';
+import StatsBar from '@/components/sections/StatsBar';
 import TrustStrip from '@/components/sections/TrustStrip';
 import AboutIntro from '@/components/sections/AboutIntro';
 import Values from '@/components/sections/Values';
@@ -42,6 +43,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <StatsBar />
       <TrustStrip />
 
       {/* Smooth transition to white */}
