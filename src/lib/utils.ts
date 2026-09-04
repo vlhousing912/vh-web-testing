@@ -28,7 +28,7 @@ export const SOCIAL_LINKS = {
   linkedin: '#',
 };
 
-export const LOGO_URL = 'https://i.ibb.co/7thDQpft/VARALAKSHMI-NEW-LOGO.jpg';
+export const LOGO_URL = 'https://i.ibb.co/2YtQ4tcj/VARALAKSHMI-LOGO-PNG-FINAL.png';
 
 export const getWhatsAppUrl = (message?: string): string => {
   if (!WHATSAPP_NUMBER) return '#';
