@@ -56,7 +56,9 @@ export default function Header() {
             <img
               src={LOGO_URL}
               alt="Varalakshmi Housing Infra LLP"
-              className="h-10 lg:h-12 w-auto object-contain"
+              className={`h-10 lg:h-12 w-auto object-contain transition-all duration-500 ${
+                isHome && !isScrolled ? 'brightness-0 invert' : ''
+              }`}
             />
           </Link>
 
