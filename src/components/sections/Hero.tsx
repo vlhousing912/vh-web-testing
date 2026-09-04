@@ -113,6 +113,12 @@ export default function Hero() {
 
 
 
+      {/* Cinematic gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-950/75 via-navy-950/55 to-navy-950/85" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-950/50 via-transparent to-navy-950/50" />
+      {/* Subtle warm tint at horizon */}
+      <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-navy-950/30" />
+
       {/* Architectural grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.03]"
