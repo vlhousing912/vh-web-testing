@@ -45,7 +45,7 @@ export default function Header() {
 
       {/* Main navigation */}
       <div className="section-max section-padding">
-        <div className="flex items-center justify-between h-16 lg:h-18">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link
             to="/"
@@ -56,7 +56,7 @@ export default function Header() {
             <img
               src={LOGO_URL}
               alt="Varalakshmi Housing Infra LLP"
-              className={`h-10 lg:h-12 w-auto object-contain transition-all duration-500 ${
+              className={`h-14 lg:h-16 w-auto object-contain transition-all duration-500 ${
                 isHome && !isScrolled ? 'brightness-0 invert' : ''
               }`}
             />

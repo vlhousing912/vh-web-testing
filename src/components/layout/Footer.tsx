@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <Link to="/" onClick={scrollToTop} aria-label="Varalakshmi Housing Infra LLP">
-              <img src={LOGO_URL} alt="Varalakshmi Housing Infra LLP" className="h-12 w-auto object-contain mb-5" />
+              <img src={LOGO_URL} alt="Varalakshmi Housing Infra LLP" className="h-20 w-auto object-contain mb-5" />
             </Link>
             <p className="text-neutral-400 text-sm leading-relaxed mb-4">
               A real-estate and infrastructure development company based in Vijayawada, Andhra Pradesh, focused on thoughtfully planned residential plotted developments.

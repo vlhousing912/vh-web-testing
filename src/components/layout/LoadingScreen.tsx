@@ -7,7 +7,7 @@ export default function LoadingScreen() {
         <img
           src={LOGO_URL}
           alt="Varalakshmi Housing Infra LLP"
-          className="h-16 mx-auto mb-6 animate-fade-in"
+          className="h-24 mx-auto mb-6 animate-fade-in"
         />
         <h1 className="text-lg font-bold text-navy-500 tracking-wide mb-2 animate-fade-in" style={{ animationDelay: '0.1s' }}>
           {COMPANY_NAME}
